@@ -1,0 +1,76 @@
+
+<html>
+<head>
+<script type="text/javascript">
+
+function firname(){
+  let reg = '/^[a-zA-Z]+$/';
+  let fname = document.getElementById("textnames").value;
+
+  if(!fname.match(reg)){
+    alert("Please enter valid first name ")
+    return;
+  }
+
+}
+
+function fage(){
+ 
+  let agee = document.getElementById("age").value;
+
+  if(agee < 18 || agee > 50){
+    alert("Please enter valid age ")
+    return;
+  }
+}
+
+
+</script> 
+<style>
+ul {list-style-type:none;}
+form{
+  background-color: #DCDCDC;
+}
+</style>
+</head>
+ 
+<body>
+<form">
+ 
+<div cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2">
+ 
+<ul>
+<li>
+<center><font size=4><b>Student Registration Form</b></font></center>
+</li>
+</ul>
+ 
+<ul>
+<li>First Name</li>
+<li><input type=text name=textnames id="textnames" size="30"></li>
+</ul>
+ 
+  <ul>
+<li>
+  Age</li>
+<li><input type=text name=age id="age" ></li>
+</ul>
+ 
+<ul>
+<li>Date Of Birth</li>
+<li><input type="date" name="dob" id="dob" size="30"></li>
+</ul>
+ 
+<ul>
+<li>Mobile Number</li>
+<li><input type="text" name="mobilenumber" id="mobilenumber" size="30"></li>
+</ul>
+<ul>
+<li><input type="reset"></li>
+<li colspan="2"><input type="submit" value="Submit Form" onclick="firname();" /></li>
+</ul>
+</div>
+</form>
+</body>
+</html>
